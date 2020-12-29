@@ -2,21 +2,21 @@
 
 function putdat(wert) {
   // Check browser support
-  if (typeof(Storage) !== "undefined") {
+  //if (typeof(Storage) !== "undefined") {
     // Store
     localStorage.setItem("lastname", wert);
-  } else {
+  //} else {
     // document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-  }
+  //}
 }
  
 function getdat() {
- if (typeof(Storage) !== "undefined") {
+ // if (typeof(Storage) !== "undefined") {
     // Retrieve
-    return(localStorage.getItem("lastname"););
-  } else {
+    return localStorage.getItem("lastname");
+  //} else {
     // document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-  }
+  //}
 }
 
 class countButton {
