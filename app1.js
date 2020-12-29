@@ -4,7 +4,7 @@ function putdat(wert) {
   // Check browser support
   if (typeof(Storage) !== "undefined") {
     // Store
-    localStorage.setItem("lastname", wert);
+    localStorage.setItem("counter", wert);
   } else {
     console.log("Sorry, your browser does not support Web Storage..."); 
   }
@@ -13,7 +13,7 @@ function putdat(wert) {
 function getdat() {
   if (typeof(Storage) !== "undefined") {
     // Retrieve
-    return localStorage.getItem("lastname");
+    return localStorage.getItem("counter");
   } else {
     console.log("Sorry, your browser does not support Web Storage..."); 
   }
