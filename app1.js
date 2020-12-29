@@ -1,6 +1,6 @@
 "use strict";  
 
-putdat(wert) {
+function putdat(wert) {
   // Check browser support
   if (typeof(Storage) !== "undefined") {
     // Store
@@ -10,7 +10,7 @@ putdat(wert) {
   }
 }
  
-getdat() {
+function getdat() {
  if (typeof(Storage) !== "undefined") {
     // Retrieve
     return(localStorage.getItem("lastname"););
