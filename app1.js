@@ -25,7 +25,11 @@ class countButton {
     this.tmp=document.querySelector(button);
     // this.n=this.tmp.innerHTML;
     let n=getdat();
-    if ( isNaN(n) ) { n=0; ; putdat(n); }
+    if (typeof n === 'number') {
+    } else { 
+      n=0;
+      putdat(n); 
+    }
     this.tmp.innerText = n;
     this.n=n;
   }
