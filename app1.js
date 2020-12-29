@@ -2,12 +2,12 @@
 
 function putdat(wert) {
   // Check browser support
-  //if (typeof(Storage) !== "undefined") {
+  if (typeof(Storage) !== "undefined") {
     // Store
     localStorage.setItem("lastname", wert);
-  //} else {
-    // document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-  //}
+  } else {
+    console.log("Sorry, your browser does not support Web Storage..."); 
+  }
 }
  
 function getdat() {
