@@ -13,7 +13,7 @@ function putdat(wert) {
 function getdat() {
  // if (typeof(Storage) !== "undefined") {
     // Retrieve
-  //  return localStorage.getItem("lastname");
+  return localStorage.getItem("lastname");
   //} else {
     // document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
   //
@@ -23,7 +23,7 @@ class countButton {
   constructor(button) {    
     this.tmp=document.querySelector(button);
     this.n=this.tmp.innerHTML;
-    // this.n=getdat();
+    this.n=getdat();
   }
   doit() {
     this.n=this.n*1+1;  
