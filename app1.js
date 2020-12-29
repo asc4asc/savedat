@@ -24,8 +24,8 @@ class countButton {
   constructor(button) {    
     this.tmp=document.querySelector(button);
     // this.n=this.tmp.innerHTML;
-    this.n=getdat();
-    this.tmp.innerText = this.n;
+    let n=getdat();
+    this.tmp.innerText = n;
   }
   doit() {
     this.n=this.n*1+1;  
