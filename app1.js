@@ -11,19 +11,21 @@ function putdat(wert) {
 }
  
 function getdat() {
- // if (typeof(Storage) !== "undefined") {
+  if (typeof(Storage) !== "undefined") {
     // Retrieve
-  return localStorage.getItem("lastname");
-  //} else {
-    // document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-  //
+    return localStorage.getItem("lastname");
+  } else {
+    console.log("Sorry, your browser does not support Web Storage..."); 
+  }
+  return 0;
 }
 
 class countButton {
   constructor(button) {    
     this.tmp=document.querySelector(button);
-    this.n=this.tmp.innerHTML;
+    // this.n=this.tmp.innerHTML;
     this.n=getdat();
+    this.tmp.innerText = this.n;
   }
   doit() {
     this.n=this.n*1+1;  
