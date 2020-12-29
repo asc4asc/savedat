@@ -27,6 +27,7 @@ class countButton {
     let n=getdat();
     if (!Number.isNaN(n)) { n=0; ; putdat(n); }
     this.tmp.innerText = n;
+    this.n=n;
   }
   doit() {
     this.n=this.n*1+1;  
