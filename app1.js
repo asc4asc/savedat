@@ -22,14 +22,14 @@ function getdat() {
 class countButton {
   constructor(button) {    
     this.tmp=document.querySelector(button);
-    // this.n=this.tmp.innerHTML;
-    this.n=getdat();
+    this.n=this.tmp.innerHTML;
+    // this.n=getdat();
   }
   doit() {
     this.n=this.n*1+1;  
     this.tmp.style.backgroundColor = "yellow";
     this.tmp.innerText = this.n;
-    savedat(this.n);
+    // savedat(this.n);
   }
 };     
 
