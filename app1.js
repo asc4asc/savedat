@@ -25,7 +25,7 @@ class countButton {
     this.tmp=document.querySelector(button);
     // this.n=this.tmp.innerHTML;
     let n=getdat();
-    if ( Number.isFinite(n) ) {
+    if ( Number.isFinite(n*1) ) {
     } else { 
       n=0;
       putdat(n); 
