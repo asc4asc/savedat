@@ -1,6 +1,6 @@
 "use strict";  
 
-//function putdat(wert) {
+function putdat(wert) {
   // Check browser support
   //if (typeof(Storage) !== "undefined") {
     // Store
@@ -8,7 +8,7 @@
   //} else {
     // document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
   //}
-//}
+}
  
 function getdat() {
  // if (typeof(Storage) !== "undefined") {
